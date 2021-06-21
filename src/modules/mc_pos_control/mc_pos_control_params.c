@@ -716,6 +716,7 @@ PARAM_DEFINE_FLOAT(MPC_TKO_RAMP_T, 3.0f);
  * @value 0 Simple position control
  * @value 3 Smooth position control (Jerk optimized)
  * @value 4 Acceleration based input
+ * @value 5 Continuous Yaw
  * @group Multicopter Position Control
  */
 PARAM_DEFINE_INT32(MPC_POS_MODE, 4);

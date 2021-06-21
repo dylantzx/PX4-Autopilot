@@ -62,6 +62,7 @@ list(APPEND flight_tasks_all
 	ManualPosition
 	ManualPositionSmoothVel
 	Transition
+	ContinuousYaw
 	${flight_tasks_to_add}
 )
 
