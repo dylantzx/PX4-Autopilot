@@ -7,7 +7,7 @@
     <arg name="vehicle" default="iris"/>
     <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/empty.world"/>
     <!-- gazebo configs -->
-    <arg name="gui" default="true"/>
+    <arg name="gui" default="false"/>
     <arg name="debug" default="false"/>
     <arg name="verbose" default="false"/>
     <arg name="paused" default="false"/>
@@ -55,8 +55,8 @@
         <arg name="fcu_url" default="udp://:14541@localhost:14581"/>
         <!-- PX4 SITL and vehicle spawn -->
         <include file="$(find px4)/launch/single_vehicle_spawn.launch">
-            <arg name="x" value="-23"/>
-            <arg name="y" value="22.5"/>
+            <arg name="x" value="-27"/>
+            <arg name="y" value="18.5"/>
             <arg name="z" value="0"/>
             <arg name="R" value="0"/>
             <arg name="P" value="0"/>
@@ -77,9 +77,9 @@
             <arg name="tgt_component" value="1"/>
         </include>
     </group>
-    <node name="image_view" pkg="image_view" type="image_view">
+    <!-- <node name="image_view" pkg="image_view" type="image_view">
         <remap from="image" to="/uav0/camera/image_raw" />
-    </node>
+    </node> -->
 
 </launch>
 <!-- to add more UAVs (up to 10):

@@ -54,7 +54,7 @@ bool FlightTaskContinuousYaw::activate(const vehicle_local_position_setpoint_s &
 }
 
 bool FlightTaskContinuousYaw::update(){
-    
+
     // float diff_y = _position(0) - _origin_y;
 
     // if (diff_y <= -16.0f){ //NED frame
@@ -64,7 +64,7 @@ bool FlightTaskContinuousYaw::update(){
     // _velocity_setpoint(0) = -1.0f;
     // }
 
-    
+
 
     return true;
 }
